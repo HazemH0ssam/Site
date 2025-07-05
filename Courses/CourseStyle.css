@@ -1,0 +1,48 @@
+body {
+  background-color: #f9f9fc;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  color: #4a347f;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #4a347f;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.course-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.course-list li a {
+  display: block;
+  background: #f0eef9;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #4a347f;
+  margin-bottom: 10px;
+}
