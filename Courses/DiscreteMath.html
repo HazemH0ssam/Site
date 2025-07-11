@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linear Algebra | Hazem Helmy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9fc;
+      padding: 2rem;
+      color: #1a1a1a;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      color: #4a347f;
+      font-size: 2.2rem;
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .tab {
+      background: none;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      font-weight: bold;
+      color: #4a347f;
+      border-bottom: 3px solid transparent;
+      transition: 0.2s ease;
+    }
+
+    .tab:hover {
+      background: #f2f0fa;
+    }
+
+    .tab.active {
+      border-bottom: 3px solid #4a347f;
+      color: #000;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    h2 {
+      color: #4a347f;
+      margin-bottom: 0.5rem;
+    }
+
+    .course-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .course-list li a {
+      display: block;
+      background: #f0eef9;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #4a347f;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      border: 1px solid #e0d6f3;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    footer a {
+      color: #4a347f;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Discrete Mathematics</h1>
+      <p>Select your college to view course materials</p>
+    </header>
+
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('FCDS')">FCDS</button>
+    </div>
+
+    <div class="tab-content active" id="FCDS">
+      <h2>Sections - Spring (2024-2025)</h2>
+      <ul class="course-list">
+        <li><a href="https://drive.google.com/file/d/1MkUYh0TYPTp6W6efA0lnukIgt1ysrgcK/view?usp=drive_link">Section 1 </a></li>
+        <li><a href="https://drive.google.com/file/d/1UOBgrhZdtQvuz24BZHKTuqzeoLfbkITN/view?usp=drive_link">Section 2 </a></li>
+        <li><a href="https://drive.google.com/file/d/11G2trRUkhYaFMEenlhwcTSDGWwbWsfpK/view?usp=drive_link">Section 3 </a></li>
+        <li><a href="https://drive.google.com/file/d/1HeimKt8tjD-1hAYNMaeeL_DyCJLaT44d/view?usp=drive_link">Section 4 </a></li>
+        <li><a href="https://drive.google.com/file/d/1_54fJ3RfhgtJnKDCw5uKtT_YbBuDwCg_/view?usp=drive_link">Section 5&6 </a></li>
+        <li><a href="https://drive.google.com/file/d/1nM6XoE48YRu6b9HlUbQGL7U3snJ5GEq0/view?usp=drive_link">Section 7 </a></li>
+        <li><a href="https://drive.google.com/file/d/1uev96G44t2wq3mi4NpqZ8mXY_ck2cuwz/view?usp=drive_link">Section 8 </a></li>
+        <li><a href="https://drive.google.com/file/d/1waYauMxiBqymPGrdHMMsPNCUIpi2tnZH/view?usp=drive_link">Section 9 </a></li>  
+    </ul>
+    <h2>Additional Resources - Spring (2024-2025)</h2>
+    <ul class="course-list">
+        <li><a href="https://www.youtube.com/playlist?list=PLPG5z3hr68Ehq0iGsUL1FOw9EVnzVbfXJ">Revision PlayList</a></li>
+        <li><a href="https://drive.google.com/file/d/1ogPq1XBr8C0VuGf9-duPLTEPtZe3YVyx/view?usp=drive_link">MidTerm Revision PDF </a></li>
+
+
+    </ul>
+    </div>
+
+
+    <footer>
+      <p><a href="../index.html">← Back to Home</a></p>
+      <p>© 2025 Hazem Helmy</p>
+    </footer>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.querySelector(`[onclick="showTab('${id}')"]`).classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
